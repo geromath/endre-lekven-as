@@ -1,0 +1,129 @@
+html {
+    font-family: "Courier New", Courier, monospace;
+}
+
+body {
+    background-color: #37343a;
+    color: White;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 500;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav {
+    background-color: rgb(29, 29, 29);
+    height: 10vh;
+    margin: none;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin: auto;
+    width: 80%;
+}
+
+.logo {
+    height: 80%;
+    width: auto;
+}
+
+.logo-img {
+    height: 100%;
+    width: auto;
+}
+
+.logo-img:hover {
+    opacity: .9;
+}
+
+.nav-items {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    list-style: none;
+}
+
+.nav-element {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 0 3vw 0 3vw;
+}
+
+.nav-element:hover {
+    background-color: rgba(10, 10, 10, .4)
+}
+
+li {
+    display: inline-block;
+    height: 100%;
+}
+
+.main-content {
+    margin: auto;
+    max-width: 80vw;
+}
+
+.eye-catcher {
+    align-items: center;
+    display: flex;
+    min-height: 80vh;
+    max-height: 90vh;
+    padding-top: 7vh;
+    margin-bottom: 5vh;
+}
+
+.left-ec {
+    flex-grow: 1;
+    margin: 0 0 0 0;
+    max-width: 37vw;
+    min-height: 50vh;
+    padding: 2em;
+}
+
+.right-ec {
+    flex-grow: 2;
+    max-width: 40vw;
+}
+
+.text-ec {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 10vh;
+}
+
+.img-ec {
+    height: auto;
+    margin: auto;
+    width: auto;
+}
+
+.about {
+    min-height: 30vh;
+    padding-top: 10vh;
+}
+
+.contact {
+    min-height: 30vh;
+    padding-top: 10vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-content {
+        margin-top: 3vh;
+        max-width: 95vw;
+    }
+}
