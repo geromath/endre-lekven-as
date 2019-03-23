@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> ENL </title>
+        <title> Endre Lekven AS </title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="js" href="javascript/main.js">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro:200i" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="img/enl-logo.png">
         <meta charset="UTF-8">
         <meta name="description" content="Endre Lekven AS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,35 +15,106 @@
     <body>
         <div class="nav">
             <div class="nav-wrapper">
-                <div class="logo"><a href="index.html"><img class="logo-img" src="enl-logo.png"></a></div>  
+                <div class="logo"><a href="index.html"><img class="logo-img" src="img/enl-logo.png"></a></div>  
                 <ul class="nav-items">
-                    <li><a class="nav-element" href="#"> Home </a></li>
-                    <li><a class="nav-element" href="#about"> About </a></li>
-                    <li><a class="nav-element" href="#contact"> Contact </a></li>
+                    <li class="nav-list-items"><a class="nav-element" href="#"> Home </a></li>
+                    <li class="nav-list-items"><a class="nav-element" href="#service"> Services </a></li>
+                    <li class="nav-list-items"><a class="nav-element" href="#about"> About </a></li>
+                    <li class="nav-list-items"><a class="nav-element" href="#contact"> Contact </a></li>
                 </ul>
             </div>
         </div>
         <div class="main-content">
-            <div class="eye-catcher">
-                <div class="left-ec">
-                    <h1> Endre Lekven AS </h1>
-                    <p class="text-ec"> Lekven Shipping AS is delivering maritime consultancy services. We have extensive experience in the maritime sector and can provide Marine surveying and Supercargo services. In addition we have the knowledge to give you the best advice and tools to run your vessel the most optimal way.</p>
-                </div>
-                <div class="right-ec">
-                    <!-- Putt inn bilde av Endre Lekven (?) -->
+            <div class="header">
+                <div class="header-opacity">
+                    <div class="eye-catcher inner-content">
+                        <div class="left-ec">
+                            <h1 class="title-ec"> Endre Lekven AS </h1>
+                            <p class="text-ec"> Modernizing efficiency in shipping </p>
+                        </div>
+                        <div class="right-ec">
+                            <!-- Putt inn bilde av Endre Lekven (?) -->
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="about" id="about">
-                <h1> About Endre Lekven AS</h1>
+                <div class="inner-content">
+                    <div class="sub-paragraph">
+                        <h1> About</h1>
+                        <p class="about-text">
+                            Lekven Shipping AS is delivering maritime consultancy services. We have extensive experience in the maritime sector and can provide Marine surveying and Supercargo services. In addition we have the knowledge to give you the best advice and tools to run your vessel the most optimal way.
+                        </p>
+                    </div>
+                    <div class="sub-img">
+                        <img class="contact-img" src="img/efficiency.jpg"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="inner-content">
+                    <h1 class="services-title" id="service"> Services </h1>
+                    <div class="service-single">
+                        <h2 class="service-title"> Service 1 </h2>
+                        <div class="service-img service-img1">
+                            <div class="img-bg"> </div> 
+                        </div>
+                        <p> We provide this server here. This is a cool service. </p>
+                    </div>
+                    <div class="service-single">
+                        <h2 class="service-title"> Service 2 </h2>
+                        <div class="service-img service-img2">
+                            <div class="img-bg"> </div> 
+                        </div>
+                        <p> Efficiency in making websites are key. Else, something bad happens. Maybe this is enough text? I'm not sure, to be honest.  <p>
+                    </div>
+                    <div class="service-single">
+                        <h2 class="service-title"> Service 3 </h2>
+                        <div class="service-img service-img3">
+                            <div class="img-bg"> </div>    
+                        </div>
+                        <p>I should really put in some photos representing these services. Or else it will look bad. Okay, let's go. </p>
+                    </div>
+                </div>
             </div>
             
             <div class="contact" id="contact">
-                <h1> Contact us </h1>
+                <div class="inner-content ">
+                    <div class="sub-paragraph contact-left">
+                        <h1> Contact </h1>
+                        <p class="contact-text">
+                            If you have further questions, or for business inquiries, please feel free to contact us using the information below. 
+                        </p>
+                        <ul class="contact-list">
+                            <li> E-mail: <a href="mailto:enl@lekven-shipping.com" class="bold">enl@lekven-shipping.com</a></li>
+                            <li> Phone: <span class="bold">+47 123 45 678</span></li>
+                            <li> Adress: 
+                                <ul class="contact-list contact-list-2">
+                                    <li class="bold"> Endre Lekven AS </li>
+                                    <li class="bold"> Engate 14 </li>
+                                    <li class="bold"> 1234 Skien </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-img">
+                        <img src="img/P2240007.jpg" class="contact-img"/>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="footer">
 
+            <div class="footer">
+                <div class="social-media">
+                    <a href="#" class="fa fa-2x fa-facebook"></a>
+                    <a href="#" class="fa fa-2x fa-linkedin"></a>
+                    <a href="#" class="fa fa-2x fa-twitter"></a>
+                </div>
+                <div class="made-by">
+                    <span> Made by &copy;Mathias Maagerø Svendsen </span>
+                </div>
+            </div>
         </div>
     </body>
 </html>
