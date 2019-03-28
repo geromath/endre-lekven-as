@@ -1,0 +1,330 @@
+/* %%% Table of contents: %%%
+
+    1. Navigation Bar
+    2. Main content
+        2.1 Header
+        2.2 Content
+    3. Footer
+    4. Global
+*/
+
+// %%% Colors!! %%%
+$colors: (
+  dark: #12130f,
+  light: #fdfffc,
+  primary: lighten(#235789, 15%),
+  error: #c1292e,
+  highlight: #f1d302
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+// %%% 1. Navigation Bar %%%
+.sticky {
+  position: fixed;
+}
+
+.clip-path {
+  clip-path: polygon(0 0, 45% 0, 50% 50%, 55% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.navbar {
+  color: color(light);
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: color(dark);
+	top: 0;
+	z-index: 1;
+
+  ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    height: 10vh;
+    width: 80%;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.2em;
+
+        &:hover {
+          transition: background-color 1s;
+          background-color: color(light);
+          color: color(dark);
+        }
+
+        img {
+          height: 8vh;
+        }
+      }
+    }
+  }
+}
+
+// %%% 2. Navigation Bar %%%
+// %%% 2.1 Header %%%
+.header {
+  color: color(dark);
+  display: flex;
+  width: fit-content;
+  margin: auto;
+	height: 90vh;
+
+  .header-title-container {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 1vw;
+
+    h1,
+    h2 {
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      color: grey;
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    width: 30vw;
+  }
+}
+
+// %%% 2.2 Content %%%
+.main-content {
+  margin: 0;
+  padding: 0;
+
+  .dark {
+    background-color: color(dark);
+    color: color(light);
+  }
+
+  .sub-content {
+    padding: 10vh 0 10vh 0;
+    .about-content {
+      width: 80vw;
+      margin: auto;
+      padding-bottom: 10vh;
+    }
+
+    .services-content {
+      margin-top: -10vh;
+      width: 100vw;
+      max-width: 100%;
+
+      .services-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .service {
+          height: 20vh;
+          background-image: url("../img/portcpt.jpg");
+          position: relative;
+          color: color(dark);
+          text-transform: uppercase;
+          cursor: pointer;
+
+          .service-inner {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            background-color: color(light);
+            opacity: 0.7;
+          }
+
+          .active {
+            opacity: 1;
+          }
+
+          h1 {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+          }
+        }
+      }
+
+      .services-single {
+        background-color: color(light);
+        color: color(dark);
+        display: none;
+
+        .services-single-content {
+          width: 80vw;
+          margin: auto;
+          padding-top: 10vh;
+          padding-bottom: 10vh;
+          display: flex;
+
+          .left {
+
+          }
+
+          .right {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+              max-height: 40vh;
+              max-width: 100%;
+            }
+          }
+
+          h1 {
+            padding-bottom: 5vh;
+          }
+
+          p {}
+        }
+      }
+
+      .service-single-active {
+        display: block;
+      }
+    }
+
+    .portfolio-content {
+      width: 80vw;
+      margin: auto;
+    }
+
+    .contact-content {
+      background-color: color(light);
+      color: color(dark);
+
+      .contact-inner {
+        width: 80vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .left {
+          ul {
+            align-items: center;
+            height: 100%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+  
+            li {
+              padding: 3px 3px 3px 0;
+  
+              a {
+                color: color(primary);
+              }
+
+              ul {
+                padding-left: 3vw;
+              }
+  
+              span {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+
+        .right {
+
+        }
+
+      }
+    }
+  }
+}
+
+.footer {
+	min-height: 30vh;
+	background-color: color(dark);
+	color: color(light);
+	position: relative;
+
+  .social-media {
+    width: fit-content;
+		margin: auto;
+		padding-top: 5vh;
+  }
+
+  .made-by {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+    font-size: 15px;
+    width: fit-content;
+    padding-bottom: 5vh;
+  }
+
+  .fa {
+    width: 5vw;
+    font-size: 40px;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+}
+// %%% 3. Navigation Bar %%%
+
+// %%% 4. Global %%%
+body {
+  background-color: color(light);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5vh;
+}
+
+a {
+  text-decoration-style: none;
+  color: color(light);
+  text-decoration: none;
+}

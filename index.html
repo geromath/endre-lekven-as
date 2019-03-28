@@ -1,120 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title> Endre Lekven AS </title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="js" href="javascript/main.js">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro:200i" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" type="image/png" href="img/enl-logo.png">
-        <meta charset="UTF-8">
-        <meta name="description" content="Endre Lekven AS">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="nav">
-            <div class="nav-wrapper">
-                <div class="logo"><a href="index.html"><img class="logo-img" src="img/enl-logo.png"></a></div>  
-                <ul class="nav-items">
-                    <li class="nav-list-items"><a class="nav-element" href="#"> Home </a></li>
-                    <li class="nav-list-items"><a class="nav-element" href="#service"> Services </a></li>
-                    <li class="nav-list-items"><a class="nav-element" href="#about"> About </a></li>
-                    <li class="nav-list-items"><a class="nav-element" href="#contact"> Contact </a></li>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Endre Lekven AS</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/enl-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-title-container">
+          <h1>Endre</h1>
+          <h1>Lekven AS</h1>
+          <h2 class="header-subtitle">Slogan modernizing something</h2>
+        </div>
+        <div class="logo-container">
+          <img src="img/enl-logo.png" />
+        </div>
+      </div>
+      <div id="navbar" class="navbar clip-path">
+        <div class="navbar-content">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li>
+              <a id="logo" href="#" class="hide"
+                ><img src="img/enl-logo.png" alt="LOGO"
+              /></a>
+            </li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div id="about" class="sub-content dark">
+          <div class="about-content">
+            <h1>About</h1>
+            <p>Et bilde av Endre i action.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              magni, nam ex voluptatibus saepe tempore omnis rem enim molestiae
+              repudiandae.
+            </p>
+          </div>
+        </div>
+        <div id="services" class="sub-content">
+          <div class="services-content">
+            <div class="services-nav">
+              <div onclick="services('s1')" class="service">
+                <div id="service1-clicker" class="service-inner active"></div>
+                <h1>Service 1</h1>
+              </div>
+              <div onclick="services('s2')" class="service">
+                <div id="service2-clicker" class="service-inner"></div>
+                <h1>Service 2</h1>
+              </div>
+              <div onclick="services('s3')" class="service">
+                <div id="service3-clicker" class="service-inner"></div>
+                <h1>Service 3</h1>
+              </div>
+            </div>
+            <div id="service1" class="services-single service-single-active">
+              <div class="services-single-content">
+                <div class="left">
+                  <h1>Service content 1</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum totam nesciunt quasi tempora perspiciatis odio
+                    voluptas dolorum? Laudantium, quo corporis!
+                  </p>
+                </div>
+                <div class="right">
+                  <img src="img/P2240007.jpg" alt="Bilde" />
+                </div>
+              </div>
+            </div>
+            <div id="service2" class="services-single">
+              <div class="services-single-content">
+                <div class="left">
+                  <h1>Service content 2</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum totam nesciunt quasi tempora perspiciatis odio
+                    voluptas dolorum? Laudantium, quo corporis!
+                  </p>
+                </div>
+                <div class="right">
+                  <img src="img/pic1.png" alt="Bilde" />
+                </div>
+              </div>
+            </div>
+            <div id="service3" class="services-single">
+              <div class="services-single-content">
+                <div class="left">
+                  <h1>Service content 3</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum totam nesciunt quasi tempora perspiciatis odio
+                    voluptas dolorum? Laudantium, quo corporis!
+                  </p>
+                </div>
+                <div class="right">
+                  <img src="img/pic2.png" alt="Bilde" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="portfolio" class="sub-content dark">
+          <div class="portfolio-content">
+            <h1>Resume</h1>
+            <p>
+              This is what I have done before. Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Unde nemo nostrum sapiente rem
+              voluptatibus dolorum et expedita commodi atque architecto, eius
+              perferendis cum veniam temporibus quia autem velit soluta
+              dignissimos explicabo. Velit aperiam, quam ab rerum pariatur
+              incidunt aspernatur optio?
+            </p>
+          </div>
+        </div>
+        <div id="contact" class="sub-content">
+          <div class="contact-content">
+            <div class="contact-inner">
+              <div class="left">
+                <h1>Contact</h1>
+                <p class="contact-text">
+                  If you have further questions, or for business inquiries,
+                  please feel free to contact us using the information below.
+                </p>
+                <ul class="contact-list">
+                  <li>
+                    E-mail:
+                    <a href="mailto:enl@lekven-shipping.com" class="bold"
+                      >enl@lekven-shipping.com</a
+                    >
+                  </li>
+                  <li>Phone: <span>+47 123 45 678</span></li>
+                  <li>
+                    Adress:
+                    <ul class="contact-list contact-list-2">
+                      <li><span>Endre Lekven AS </span></li>
+                      <li><span> Engate 14 </span></li>
+                      <li><span> 1234 Skien </span></li>
+                    </ul>
+                  </li>
                 </ul>
+              </div>
+              <div class="right">
+                <h1>Bilde av Endre hadde vært kult</h1>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="main-content">
-            <div class="header">
-                <div class="header-opacity">
-                    <div class="eye-catcher inner-content">
-                        <div class="left-ec">
-                            <h1 class="title-ec"> Endre Lekven AS </h1>
-                            <p class="text-ec"> Modernizing efficiency in shipping </p>
-                        </div>
-                        <div class="right-ec">
-                            <!-- Putt inn bilde av Endre Lekven (?) -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="about" id="about">
-                <div class="inner-content">
-                    <div class="sub-paragraph">
-                        <h1> About</h1>
-                        <p class="about-text">
-                            Lekven Shipping AS is delivering maritime consultancy services. We have extensive experience in the maritime sector and can provide Marine surveying and Supercargo services. In addition we have the knowledge to give you the best advice and tools to run your vessel the most optimal way.
-                        </p>
-                    </div>
-                    <div class="sub-img">
-                        <img class="contact-img" src="img/efficiency.jpg"/>
-                    </div>
-                </div>
-            </div>
-
-            <div class="services">
-                <div class="inner-content">
-                    <h1 class="services-title" id="service"> Services </h1>
-                    <div class="service-single">
-                        <h2 class="service-title"> Service 1 </h2>
-                        <div class="service-img service-img1">
-                            <div class="img-bg"> </div> 
-                        </div>
-                        <p> We provide this server here. This is a cool service. </p>
-                    </div>
-                    <div class="service-single">
-                        <h2 class="service-title"> Service 2 </h2>
-                        <div class="service-img service-img2">
-                            <div class="img-bg"> </div> 
-                        </div>
-                        <p> Efficiency in making websites are key. Else, something bad happens. Maybe this is enough text? I'm not sure, to be honest.  <p>
-                    </div>
-                    <div class="service-single">
-                        <h2 class="service-title"> Service 3 </h2>
-                        <div class="service-img service-img3">
-                            <div class="img-bg"> </div>    
-                        </div>
-                        <p>I should really put in some photos representing these services. Or else it will look bad. Okay, let's go. </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="contact" id="contact">
-                <div class="inner-content ">
-                    <div class="sub-paragraph contact-left">
-                        <h1> Contact </h1>
-                        <p class="contact-text">
-                            If you have further questions, or for business inquiries, please feel free to contact us using the information below. 
-                        </p>
-                        <ul class="contact-list">
-                            <li> E-mail: <a href="mailto:enl@lekven-shipping.com" class="bold">enl@lekven-shipping.com</a></li>
-                            <li> Phone: <span class="bold">+47 123 45 678</span></li>
-                            <li> Adress: 
-                                <ul class="contact-list contact-list-2">
-                                    <li class="bold"> Endre Lekven AS </li>
-                                    <li class="bold"> Engate 14 </li>
-                                    <li class="bold"> 1234 Skien </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub-img">
-                        <img src="img/P2240007.jpg" class="contact-img"/>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer">
-                <div class="social-media">
-                    <a href="#" class="fa fa-2x fa-facebook"></a>
-                    <a href="#" class="fa fa-2x fa-linkedin"></a>
-                    <a href="#" class="fa fa-2x fa-twitter"></a>
-                </div>
-                <div class="made-by">
-                    <span> Made by &copy;Mathias Maagerø Svendsen </span>
-                </div>
-            </div>
+      </div>
+      <div class="footer">
+        <div class="social-media">
+          <a href="#" class="fa fa-2x fa-facebook"></a>
+          <a href="#" class="fa fa-2x fa-linkedin"></a>
+          <a href="#" class="fa fa-2x fa-twitter"></a>
         </div>
-    </body>
+        <div class="made-by">
+          <span> Made by &copy;Mathias Maagerø Svendsen </span>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/script.js"></script>
+  </body>
 </html>
