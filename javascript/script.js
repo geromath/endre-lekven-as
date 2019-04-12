@@ -40,6 +40,7 @@ function services(service) {
     s1clicker.classList.remove("active");
     s2clicker.classList.remove("active");
     s3clicker.classList.remove("active");
+    
     if (service == 's1') {
         s1clicker.classList.add("active");
         s1.classList.add("service-single-active");

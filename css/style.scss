@@ -10,7 +10,7 @@
 
 // %%% Colors!! %%%
 $colors: (
-  dark: #12130f,
+  dark: #08415C,
   light: #fdfffc,
   primary: lighten(#235789, 15%),
   error: #c1292e,
@@ -36,6 +36,15 @@ $colors: (
 
 .hide {
   opacity: 0;
+}
+
+.button {
+  background-color: color(highlight);
+  color: color(dark);
+  padding: 15px;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 .navbar {
@@ -153,13 +162,24 @@ $colors: (
       .services-nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        background-repeat: no-repeat;
+
+        .s1 {
+          background-image: url("../img/roro.jpg");
+        }
+
+        .s2 {
+          background-image: url("../img/freightforwarding.jpg");
+        }
+
+        .s3 {
+          background-image: url("../img/supergargo1.jpg");
+        }
 
         .service {
           height: 20vh;
-          background-image: url("../img/portcpt.jpg");
           position: relative;
           color: color(dark);
-          text-transform: uppercase;
           cursor: pointer;
 
           .service-inner {
@@ -168,10 +188,16 @@ $colors: (
             max-width: 100%;
             background-color: color(light);
             opacity: 0.7;
+
+          }
+          
+          h1 {
+            font-size: 1.5em;
           }
 
           .active {
             opacity: 1;
+            background-color: color(primary);
           }
 
           h1 {
@@ -264,7 +290,14 @@ $colors: (
         }
 
         .right {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
 
+          img {
+            max-width: 100%;
+            max-height: 40vw;
+          }
         }
 
       }

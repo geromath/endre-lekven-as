@@ -13,3 +13,11 @@ https://www.shutterstock.com/nb/image-photo/germany-bremerhaven-20170913-cars-wa
 Services 3: 
 https://www.shutterstock.com/nb/image-photo/loading-master-harbor-controller-charge-containers-1187587840
 
+Freight Forwarding: MAKE MY OWN FROM MULTIPLE IMAGES?
+https://www.shutterstock.com/nb/image-vector/concept-freight-forwarding-by-sea-transport-352171511
+
+RoRo:
+https://www.shutterstock.com/nb/image-photo/campana-river-zarate-argentina-22-august-1222911958
+
+Supercargo1:
+https://www.shutterstock.com/nb/image-photo/workers-standing-against-white-background-268701926

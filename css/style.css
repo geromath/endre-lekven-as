@@ -24,13 +24,22 @@
   opacity: 0;
 }
 
+.button {
+  background-color: #f1d302;
+  color: #08415C;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-align: center;
+}
+
 .navbar {
   color: #fdfffc;
   width: 100vw;
   max-width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #12130f;
+  background-color: #08415C;
   top: 0;
   z-index: 1;
 }
@@ -73,7 +82,7 @@
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
   background-color: #fdfffc;
-  color: #12130f;
+  color: #08415C;
 }
 
 .navbar ul li a img {
@@ -81,7 +90,7 @@
 }
 
 .header {
-  color: #12130f;
+  color: #08415C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +152,7 @@
 }
 
 .main-content .dark {
-  background-color: #12130f;
+  background-color: #08415C;
   color: #fdfffc;
 }
 
@@ -168,14 +177,25 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  background-repeat: no-repeat;
+}
+
+.main-content .sub-content .services-content .services-nav .s1 {
+  background-image: url("../img/roro.jpg");
+}
+
+.main-content .sub-content .services-content .services-nav .s2 {
+  background-image: url("../img/freightforwarding.jpg");
+}
+
+.main-content .sub-content .services-content .services-nav .s3 {
+  background-image: url("../img/supergargo1.jpg");
 }
 
 .main-content .sub-content .services-content .services-nav .service {
   height: 20vh;
-  background-image: url("../img/portcpt.jpg");
   position: relative;
-  color: #12130f;
-  text-transform: uppercase;
+  color: #08415C;
   cursor: pointer;
 }
 
@@ -187,8 +207,13 @@
   opacity: 0.7;
 }
 
+.main-content .sub-content .services-content .services-nav .service h1 {
+  font-size: 1.5em;
+}
+
 .main-content .sub-content .services-content .services-nav .service .active {
   opacity: 1;
+  background-color: #337ec6;
 }
 
 .main-content .sub-content .services-content .services-nav .service h1 {
@@ -199,7 +224,7 @@
 
 .main-content .sub-content .services-content .services-single {
   background-color: #fdfffc;
-  color: #12130f;
+  color: #08415C;
   display: none;
 }
 
@@ -243,7 +268,7 @@
 
 .main-content .sub-content .contact-content {
   background-color: #fdfffc;
-  color: #12130f;
+  color: #08415C;
 }
 
 .main-content .sub-content .contact-content .contact-inner {
@@ -281,9 +306,26 @@
   font-weight: 600;
 }
 
+.main-content .sub-content .contact-content .contact-inner .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .sub-content .contact-content .contact-inner .right img {
+  max-width: 100%;
+  max-height: 40vw;
+}
+
 .footer {
   min-height: 30vh;
-  background-color: #12130f;
+  background-color: #08415C;
   color: #fdfffc;
   position: relative;
 }
