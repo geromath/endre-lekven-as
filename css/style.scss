@@ -80,6 +80,10 @@ $colors: (
         text-transform: uppercase;
         font-size: 1.2em;
 
+        @media screen and (max-width: 800px) {
+          font-size: .8em;
+        }
+
         &:hover {
           transition: background-color 1s;
           background-color: color(light);
@@ -94,14 +98,18 @@ $colors: (
   }
 }
 
-// %%% 2. Navigation Bar %%%
+// %%% 2. Main content %%%
 // %%% 2.1 Header %%%
 .header {
   color: color(dark);
   display: flex;
   width: fit-content;
   margin: auto;
-	height: 90vh;
+  height: 90vh;
+
+  @media screen and (max-width: 800px) {
+    height: 50vh;
+  }
 
   .header-title-container {
     display: flex;
@@ -134,6 +142,29 @@ $colors: (
     padding-left: 1vw;
     width: 30vw;
   }
+
+  @media screen and (max-width: 800px) {
+    .header-title-container {
+      width: 60%;
+      align-items: center;
+      text-align: center;
+  
+      h1 {
+        font-size: 2em;
+      }
+  
+      h2 {
+        width: 50%;
+      }
+    }
+  
+    .logo-container {
+      display: flex;
+      align-items: center;
+      padding-left: 1vw;
+      width: 40%;
+    }
+  }
 }
 
 // %%% 2.2 Content %%%
@@ -164,6 +195,10 @@ $colors: (
         grid-template-columns: 1fr 1fr 1fr;
         background-repeat: no-repeat;
 
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+
         .s1 {
           background-image: url("../img/roro.jpg");
         }
@@ -176,11 +211,17 @@ $colors: (
           background-image: url("../img/supergargo1.jpg");
         }
 
+
+
         .service {
           height: 20vh;
           position: relative;
           color: color(dark);
           cursor: pointer;
+
+          &:hover {
+            opacity: .7;
+          }
 
           .service-inner {
             height: 100%;
@@ -213,12 +254,26 @@ $colors: (
         color: color(dark);
         display: none;
 
+        @media screen and (max-width: 800px) {
+          display: block;
+          &:nth-child(3) {
+            background-color: color(dark);
+            color: color(light);
+          }
+        }
+
         .services-single-content {
           width: 80vw;
           margin: auto;
           padding-top: 10vh;
           padding-bottom: 10vh;
           display: flex;
+
+          @media screen and (max-width: 800px) {
+            &:nth-child(2n) {
+              background-color: color(dark);
+            }
+          }
 
           .left {
 
@@ -228,6 +283,11 @@ $colors: (
             width: 100%;
             display: flex;
             justify-content: flex-end;
+
+            @media screen and (max-width: 800px) {
+              width: 0;
+              display: none;
+            }
 
             img {
               max-height: 40vh;
@@ -262,6 +322,10 @@ $colors: (
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        @media screen and (max-width: 800px) {
+          grid-template-columns: 1fr 0;
+        }
 
         .left {
           ul {
