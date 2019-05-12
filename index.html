@@ -1,45 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title> ENL </title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="js" href="javascript/main.js">
-        <meta charset="UTF-8">
-        <meta name="description" content="Endre Lekven AS">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="nav">
-            <div class="nav-wrapper">
-                <div class="logo"><a href="index.html"><img class="logo-img" src="enl-logo.png"></a></div>  
-                <ul class="nav-items">
-                    <li><a class="nav-element" href="#"> Home </a></li>
-                    <li><a class="nav-element" href="#about"> About </a></li>
-                    <li><a class="nav-element" href="#contact"> Contact </a></li>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Endre Lekven AS</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/enl-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-title-container">
+          <h1>Endre</h1>
+          <h1>Lekven AS</h1>
+          <!-- HER ENDRES DEN GRÅ TEKSTEN UNDER FIRMANAVNET -->
+          <h2 class="header-subtitle">Slogan modernizing something</h2>
+        </div>
+        <div class="logo-container">
+          <img src="img/enl-logo.png" />
+        </div>
+      </div>
+      <div id="navbar" class="navbar clip-path">
+        <div class="navbar-content">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li>
+              <a id="logo" href="#" class="hide"
+                ><img src="img/enl-logo.png" alt="LOGO"
+              /></a>
+            </li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div id="about" class="sub-content dark">
+          <div class="about-content">
+            <h1>About</h1>
+            <p>
+              <!-- HER ENDRES TEKSTEN TIL ABOUT -->
+              Lekven Shipping As is delivering maritime consultancy services. We have extensive experience in the maritime sector and can provide Marine surveying and Supercargo services. In addition we have the knowledge to give you the best advice and tools to run your vessel the most optimal way.
+            </p>
+            <p>We are located in Skien, Norway. But we may easily serve you worldwide, either direct or through a network of contacts.</p>
+            <a class="button" href="#contact"> Find a way to contact us </a>
+          </div>
+        </div>
+        <div id="services" class="sub-content">
+          <div class="services-content">
+            <div class="services-nav">
+              <div onclick="services('s1')" class="service s1">
+                <div id="service1-clicker" class="service-inner active"></div>
+                <h1>Ro-Ro Shipping Expert</h1>
+              </div>
+              <div onclick="services('s2')" class="service s2">
+                <div id="service2-clicker" class="service-inner"></div>
+                <h1>Freight Forwarding Services</h1>
+              </div>
+              <div onclick="services('s3')" class="service s3">
+                <div id="service3-clicker" class="service-inner"></div>
+                <h1>Supercargo services</h1>
+              </div>
+            </div>
+            <div id="service1" class="services-single service-single-active">
+              <div class="services-single-content">
+                <div class="left">
+                  <h1>Ro-Ro Shipping Expert</h1>
+                  <p>
+                    <!-- HER ENDRES TEKSTEN TIL RORO-SHIPPING -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum totam nesciunt quasi tempora perspiciatis odio
+                    voluptas dolorum? Laudantium, quo corporis!
+                  </p>
+                </div>
+                <div class="right">
+                  <!-- HER ENDRES BILDET TIL RORO-SHIPPING -->
+                  <!-- FOR Å ENDRE BILDE TIL RORO-SHIPPING LEGGER DU BILDET I "IMG"-MAPPA OG ENDRER DET SOM STÅR INNI src="" -->
+                  <img src="img/roro.jpg" alt="Bilde" />
+                </div>
+              </div>
+            </div>
+            <div id="service2" class="services-single">
+              <div class="services-single-content">
+                <div class="left">
+                  <h1>Freight Forwarding Services</h1>
+                  <p>
+                    <!-- HER ENDRES TEKSTEN TIL FREIGHT FORWARDING -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum totam nesciunt quasi tempora perspiciatis odio
+                    voluptas dolorum? Laudantium, quo corporis!
+                  </p>
+                </div>
+                <div class="right">
+                  <!-- HER ENDRES BILDET TIL FREIGHT FORWARDING -->
+                  <img src="img/freightforwarding.jpg" alt="Bilde" />
+                </div>
+              </div>
+            </div>
+            <div id="service3" class="services-single">
+              <div class="services-single-content">
+                <div class="left">
+                  <h1>Supercargo services</h1>
+                  <p>
+                    <!-- HER ENDRES TEKSTEN TIL SUPERCARGO -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum totam nesciunt quasi tempora perspiciatis odio
+                    voluptas dolorum? Laudantium, quo corporis!
+                  </p>
+                </div>
+                <div class="right">
+                  <!-- HER ENDRES BILDET TIL SUPERCARGO -->
+                  <img src="img/supergargo1.jpg" alt="Bilde" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="portfolio" class="sub-content dark">
+          <div class="portfolio-content">
+            <h1>Portfolio</h1>
+            <p>
+              <!-- HER ENDRES TEKSTEN TIL PORTFOLIO -->
+              This is what I have done before. Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Unde nemo nostrum sapiente rem
+              voluptatibus dolorum et expedita commodi atque architecto, eius
+              perferendis cum veniam temporibus quia autem velit soluta
+              dignissimos explicabo. Velit aperiam, quam ab rerum pariatur
+              incidunt aspernatur optio?
+            </p>
+          </div>
+        </div>
+        <div id="contact" class="sub-content">
+          <div class="contact-content">
+            <div class="contact-inner">
+              <div class="left">
+                <h1>Contact</h1>
+                <p class="contact-text">
+                  <!-- HER ENDRES TEKSTEN TIL CONTACT -->
+                  If you have further questions, or for business inquiries,
+                  please feel free to contact us using the information below.
+                </p>
+                <!-- HER ENDRES TEKSTEN TIL KONTAKT-LISTA -->
+                <ul class="contact-list">
+                  <li>
+                    E-mail:
+                    <a href="mailto:enl@lekven-shipping.com" class="bold"
+                      >enl@lekven-shipping.com</a
+                    >
+                  </li>
+                  <li>Phone: <span>+47 123 45 678</span></li>
+                  <li>
+                    Adress:
+                    <ul class="contact-list contact-list-2">
+                      <li><span>Endre Lekven AS </span></li>
+                      <li><span> Engate 14 </span></li>
+                      <li><span> 1234 Skien </span></li>
+                    </ul>
+                  </li>
                 </ul>
+              </div>
+              <div class="right">
+                <!-- HER ENDRES BILDET TIL KONTAKT -->
+                <img src="img/portrait.jpg" alt="Portrait of Endre">
+              </div>
             </div>
+          </div>
         </div>
-        <div class="main-content">
-            <div class="eye-catcher">
-                <div class="left-ec">
-                    <h1> Endre Lekven AS </h1>
-                    <p class="text-ec"> Lekven Shipping AS is delivering maritime consultancy services. We have extensive experience in the maritime sector and can provide Marine surveying and Supercargo services. In addition we have the knowledge to give you the best advice and tools to run your vessel the most optimal way.</p>
-                </div>
-                <div class="right-ec">
-                    <p class="text-ec"> Lekven Shipping AS is delivering maritime consultancy services. We have extensive experience in the maritime sector and can provide Marine surveying and Supercargo services. In addition we have the knowledge to give you the best advice and tools to run your vessel the most optimal way.</p>
-                </div>
-            </div>
-
-            <div class="about" id="about">
-                <h1> About Endre Lekven AS</h1>
-            </div>
-            
-            <div class="contact" id="contact">
-                <h1> Contact us </h1>
-            </div>
+      </div>
+      <div class="footer">
+        <div class="social-media">
+          <!-- HER ENDRES LENKENE TIL LINKDIN OG TWITTER -->
+          <!-- FOR Å ENDRE LENKENE BYTTER DU # MED LENKEN TIL DIN PROFIL PÅ LINKEDIN ELLER TWITTIR I href="#" -->
+          <a href="#" class="fa fa-2x fa-linkedin"></a>
+          <a href="#" class="fa fa-2x fa-twitter"></a>
         </div>
-        <div class="footer">
-
+        <div class="made-by">
+          <span> Made by &copy;Mathias Maagerø Svendsen </span>
         </div>
-    </body>
+      </div>
+    </div>
+    <script src="javascript/script.js"></script>
+  </body>
 </html>

@@ -1,17 +1,20 @@
 html {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
     background-color: #37343a;
     color: White;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
+    font-size: 24px;
+    font-weight: 100;
 }
 
 h1 {
-    font-size: 4em;
-    font-weight: 500;
+    font-size: 3em;
+    font-weight: 300;
 }
 
 a {
@@ -22,8 +25,9 @@ a {
 .nav {
     background-color: rgb(29, 29, 29);
     height: 10vh;
-    margin: none;
+    margin: 0;
     position: fixed;
+    z-index: 999;
     width: 100%;
 }
 
@@ -67,30 +71,46 @@ a {
     background-color: rgba(10, 10, 10, .4)
 }
 
-li {
+.nav-list-items {
     display: inline-block;
     height: 100%;
 }
 
 .main-content {
     margin: auto;
+}
+
+.inner-content {
+    margin: auto;
     max-width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.header {
+    background: url(../img/pic2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-opacity {
+    background-color: rgba(3, 3, 3, 0.85);
 }
 
 .eye-catcher {
     align-items: center;
     display: flex;
-    min-height: 80vh;
+    min-height: 60vh;
     max-height: 90vh;
     padding-top: 7vh;
-    margin-bottom: 5vh;
 }
 
 .left-ec {
     flex-grow: 1;
     margin: 0 0 0 0;
     max-width: 37vw;
-    min-height: 50vh;
     padding: 2em;
 }
 
@@ -99,10 +119,17 @@ li {
     max-width: 40vw;
 }
 
+.title-ec {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
 .text-ec {
+    padding-top: 0;
+    margin-top: 0;
     font-size: 20px;
-    line-height: 1.8;
-    margin-top: 10vh;
+    font-weight: 500;
 }
 
 .img-ec {
@@ -113,13 +140,134 @@ li {
 
 .about {
     min-height: 30vh;
-    padding-top: 10vh;
+    padding: 5vh 0 15vh 0;
+    background-color: #26242b;
+}
+
+.sub-paragraph {
+    max-width: 50%;
+    display: inline-block;
+}
+
+.sub-img {
+    width: 50%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.contact-img {
+    margin-top: 10vh;
+    display: block;
+    max-width: 100%;
+    max-height: 40vh;
+    width: auto;
+    height: auto;
 }
 
 .contact {
     min-height: 30vh;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+    background-color: #26242b;
+}
+
+.footer {
+    max-height: 30vh;
     padding-top: 10vh;
 }
+
+.social-media {
+    width: fit-content;
+    margin: auto;
+}
+
+.made-by {
+    font-size: 15px;
+    margin: auto;
+    width: fit-content;
+    padding-bottom: 5vh;
+}
+
+.fa {
+    width: 5vw;
+    font-size: 100px;
+    padding: 40px;
+    text-align: center;
+}
+
+.fa:hover {
+    opacity: .7;
+}
+
+.contact-list {
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list-2 {
+    padding-left: 3vw;
+}
+
+.contact-list li {
+    padding: 3px 3px 3px 0;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.services {
+    padding-bottom: 10vh;
+}
+
+.service-single {
+    flex: 1;
+    max-width: 40%;
+    padding: 0 3% 0 3%;
+    text-align: center;
+}
+
+.services-title {
+    flex: 0 0 100%;
+    padding-top: 10vh;
+    margin-bottom: 0;
+}
+
+.service-img {
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-img1 {
+    background-image: url(../img/pic1.png);
+}
+
+.service-img2 {
+    background-image: url(../img/pic2.png);
+}
+
+.service-img3 {
+    background-image: url(../img/portcpt.jpg);
+}
+
+.img-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .4);
+}
+
 
 @media only screen and (max-width: 768px) {
     .main-content {
